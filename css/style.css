@@ -1,0 +1,63 @@
+/* Global Styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background-color: #F9F6F1;
+    color: #333333;
+}
+
+a {
+    text-decoration: none;
+    color: #333333;
+}
+
+/* Header & Navigation */
+header {
+    background: #F9F6F1;
+    padding: 1rem 0;
+    border-bottom: 1px solid #333333;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+#catering {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #B5558F;
+    color: #F9F6F1;
+    padding: 15px 30px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333333;
+    color: #F9F6F1;
+}
