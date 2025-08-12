@@ -34,8 +34,41 @@
                 </div>
 
                 <div class="chef-cv">
-                    <h3>Werdegang & Philosophie</h3>
-                    <p>Nach Stationen in den besten Küchen Europas hat Anna ihren eigenen Stil entwickelt: eine moderne Interpretation klassischer Gerichte, immer mit einem Hauch von Kreativität und einem Fokus auf saisonale Produkte.</p>
+                    <h3 id="toggleTimeline" class="active">Werdegang <span class="arrow"></span></h3>
+                    <div class="timeline-container" id="timelineContainer">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h4>5-Sterne-Restaurant, Berlin</h4>
+                                    <p>Beginn der Reise in der deutschen Hauptstadt.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h4>Gourmet-Tempel, München</h4>
+                                    <p>Verfeinerung der Techniken in Bayern.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h4>Michelin Star, New York</h4>
+                                    <p>Eroberung der anspruchsvollen US-Gourmetszene.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h4>Luxusyacht, Côte d'Azur</h4>
+                                    <p>Exklusive kulinarische Erlebnisse auf dem Mittelmeer.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h4>Top-Restaurant, Hamburg</h4>
+                                    <p>Rückkehr nach Deutschland und Perfektionierung ihres Stils.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="chef-creations">
@@ -53,5 +86,13 @@
     <footer>
         <p>&copy; 2025 Restaurant "Lecker". Alle Rechte vorbehalten.</p>
     </footer>
+    <script>
+        document.getElementById('toggleTimeline').addEventListener('click', function() {
+            var timelineContainer = document.getElementById('timelineContainer');
+            var isHidden = timelineContainer.style.display === 'none';
+            timelineContainer.style.display = isHidden ? 'block' : 'none';
+            this.classList.toggle('active', !isHidden);
+        });
+    </script>
 </body>
 </html>
