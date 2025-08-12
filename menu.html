@@ -25,9 +25,19 @@
     <main>
         <div class="container">
             <section id="menu">
-                <h2>Unsere Speisekarte</h2>
+                <img src="assets/images/speisekarte.jpg" alt="Speisekarte" class="menu-header-image">
+                <h2 class="menu-title">Unsere Speisekarte</h2>
 
-                <div class="menu-category">
+                <section id="menu-nav">
+                <div class="menu-nav-buttons">
+                    <a href="#vorspeisen" class="menu-nav-button">Vorspeisen</a>
+                    <a href="#hauptgange" class="menu-nav-button">Hauptgänge</a>
+                    <a href="#desserts" class="menu-nav-button">Desserts</a>
+                    <a href="#getranke" class="menu-nav-button">Getränke</a>
+                </div>
+                </section>
+
+                <div id="vorspeisen" class="menu-category">
                     <h3>Vorspeisen</h3>
                     <div class="menu-item">
                         <div class="menu-item-header">
@@ -43,9 +53,16 @@
                         </div>
                         <p>Hauchdünn geschnittenes Rinderfilet mit Rucola, Parmesan und Pinienkernen.</p>
                     </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Tomatensuppe</h4>
+                            <span class="price">€ 7.50</span>
+                        </div>
+                        <p>Cremige Suppe aus sonnengereiften Tomaten mit einem Hauch von Basilikum. (Vegan)</p>
+                    </div>
                 </div>
 
-                <div class="menu-category">
+                <div id="hauptgange" class="menu-category">
                     <h3>Hauptgänge</h3>
                     <div class="menu-item">
                         <div class="menu-item-header">
@@ -61,9 +78,16 @@
                         </div>
                         <p>Hausgemachte Pasta mit einer reichhaltigen Linsensauce. (Vegan)</p>
                     </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Wiener Schnitzel</h4>
+                            <span class="price">€ 22.50</span>
+                        </div>
+                        <p>Klassisches Wiener Schnitzel vom Kalb mit Petersilkartoffeln und Preiselbeeren.</p>
+                    </div>
                 </div>
 
-                <div class="menu-category">
+                <div id="desserts" class="menu-category">
                     <h3>Desserts</h3>
                     <div class="menu-item">
                         <div class="menu-item-header">
@@ -71,6 +95,31 @@
                             <span class="price">€ 9.00</span>
                         </div>
                         <p>Klassisches italienisches Tiramisu nach Familienrezept.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Schokoladen-Lava-Kuchen</h4>
+                            <span class="price">€ 10.50</span>
+                        </div>
+                        <p>Warmer Schokoladenkuchen mit flüssigem Kern, serviert mit einer Kugel Vanilleeis.</p>
+                    </div>
+                </div>
+
+                <div id="getranke" class="menu-category">
+                    <h3>Getränke</h3>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Hausgemachte Limonade</h4>
+                            <span class="price">€ 4.50</span>
+                        </div>
+                        <p>Erfrischende, hausgemachte Limonade mit Zitrone und Minze.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Espresso Martini</h4>
+                            <span class="price">€ 12.00</span>
+                        </div>
+                        <p>Ein kräftiger Cocktail aus Wodka, Kaffeelikör und frischem Espresso.</p>
                     </div>
                 </div>
             </section>
@@ -82,3 +131,4 @@
     </footer>
 </body>
 </html>
+<script src="js/menu.js"></script>
