@@ -497,6 +497,13 @@ nav ul li a:hover, nav ul li a.current {
     visibility: visible;
 }
 
+.footer-legal {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #5D5D5D;
+    margin-top: 20px;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     nav {
