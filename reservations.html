@@ -10,7 +10,7 @@
     <header>
         <div class="container">
             <nav>
-                <a href="index.html" class="logo">Lecker</a>
+                <a href="index.html" class="logo"><img src="assets/images/logo-removebg.png" alt="Lecker Logo"></a>
                 <div class="menu-toggle" id="mobile-menu">
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -31,29 +31,31 @@
         <div class="container">
             <section id="reservation-form">
                 <h2>Tisch reservieren</h2>
-                <form action="#" method="POST" id="contact-form">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="people">Anzahl der Personen</label>
-                        <input type="number" id="people" name="people" min="1" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="date">Datum</label>
-                        <input type="date" id="date" name="date" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="time">Uhrzeit</label>
-                        <input type="time" id="time" name="time" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">E-Mail</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <button type="submit" class="cta-button">Anfrage senden</button>
-                </form>
+                <div class="reservation-container">
+                    <form action="#" method="POST" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="people">Anzahl der Personen</label>
+                            <input type="number" id="people" name="people" min="1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Datum</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Uhrzeit</label>
+                            <input type="time" id="time" name="time" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-Mail</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <button type="submit" class="cta-button">Anfrage senden</button>
+                    </form>
+                </div>
             </section>
         </div>
     </main>

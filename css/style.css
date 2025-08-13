@@ -35,7 +35,7 @@ a {
 /* Header & Navigation */
 header {
     background: var(--light-gray);
-    padding: 1rem 0;
+
     border-bottom: 1px solid var(--light-gray);
     position: sticky;
     top: 0;
@@ -46,12 +46,12 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
 }
 
-nav .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+nav .logo img {
+    padding-top: 5px;
+    height: 75px;
+    width: auto;
 }
 
 nav ul {
@@ -69,9 +69,10 @@ nav ul li a {
     transition: color 0.3s ease;
     padding: 5px 0; /* Add some padding for better click area */
     display: block; /* Make links block-level for full padding */
+    font-size: 1.1rem;
 }
 
-nav ul li a:hover {
+nav ul li a:hover, nav ul li a.current {
     color: var(--secondary-color);
 }
 
@@ -182,8 +183,13 @@ nav ul li a:hover {
 }
 
 /* Main Content */
-main {
-    padding: 20px 0;
+
+.home-main {
+    background-image: url('../assets/images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px 0px;
 }
 
 #catering {
@@ -317,25 +323,47 @@ main {
     align-items: baseline;
 }
 
-.price {
 /* Reservation Form */
 #reservation-form {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.reservation-container {
     max-width: 600px;
     margin: auto;
+    background: var(--white);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
 
 .form-group {
     margin-bottom: 20px;
+    text-align: left;
 }
 
 .form-group label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--secondary-color);
 }
 
 .form-group input {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#reservation-form .cta-button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
+}
+
 /* Blog Page */
 .recipe-post {
     margin-bottom: 40px;
@@ -349,12 +377,6 @@ main {
     border-radius: 5px;
     margin-bottom: 20px;
 }
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-    font-weight: bold;
-    color: var(--primary-color);
-}
 
 .cta-button {
     display: inline-block;
@@ -364,19 +386,96 @@ main {
     border-radius: 5px;
     margin-top: 20px;
     font-weight: bold;
-    transition: background 0.3s ease;
-}
-
-.cta-button:hover {
-    background: #d35400;
 }
 
 /* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: var(--secondary-color);
-    color: var(--white);
+.site-footer {
+    background-color: #D9C6B0;
+    color: #5D5D5D;
+    padding: 50px 0;
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    gap: 20px;
+}
+
+.footer-logo {
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color:var(--light-gray);
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer-contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer-column:first-child {
+    text-align: right;
+}
+
+.footer-column:last-child {
+    text-align: left;
+}
+
+.footer-column h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.footer-column p {
+    margin: 0 0 10px;
+    line-height: 1.6;
+}
+
+.back-to-top {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #5D5D5D;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
 }
 
 /* Responsive Design */
@@ -511,8 +610,4 @@ footer {
 #toggleTimeline.active .arrow {
     transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
-}
-
-.timeline-content h4 {
-    margin-top: 0;
 }

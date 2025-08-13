@@ -8,4 +8,14 @@ document.addEventListener('DOMContentLoaded', function() {
             navList.classList.toggle('active');
         });
     }
+
+    // Highlight active navigation link
+    const currentLocation = window.location.href;
+    const navLinks = document.querySelectorAll('nav ul li a');
+
+    navLinks.forEach(link => {
+        if(link.href === currentLocation) {
+            link.classList.add('current');
+        }
+    });
 });
