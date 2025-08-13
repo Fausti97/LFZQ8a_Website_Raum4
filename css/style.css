@@ -34,7 +34,7 @@ a {
 
 /* Header & Navigation */
 header {
-    background: var(--white);
+    background: var(--light-gray);
     padding: 1rem 0;
     border-bottom: 1px solid var(--light-gray);
     position: sticky;
@@ -382,19 +382,7 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
     nav {
-        flex-wrap: wrap; /* Allow items to wrap */
-        justify-content: flex-start; /* Align items to the start (left) */
-    }
-
-    nav .logo {
-        order: 2; /* Place logo after the menu toggle */
-        margin-left: auto; /* Push logo to the right */
-        margin-right: 20px; /* Add some space to the right of the logo */
-    }
-
-    .menu-toggle {
-        order: 1; /* Place menu toggle first */
-        margin-left: 20px; /* Align to the left */
+        flex-direction: column;
     }
 
     nav ul {
@@ -489,9 +477,8 @@ footer {
 
 .timeline-content {
     background-color: #f9f9f900;
-    padding: 15px;
     border-radius: 5px;
-    text-align: center;
+    text-align: left;
     white-space: normal;
     width: 45%;
     position: relative;
