@@ -53,8 +53,15 @@
                             <label for="email">E-Mail</label>
                             <input type="email" id="email" name="email" required>
                         </div>
+                        <div class="form-group">
+                            <label for="notes">Wünsche & Anmerkungen</label>
+                            <textarea id="notes" name="notes" rows="4"></textarea>
+                        </div>
                         <button type="submit" class="cta-button">Anfrage senden</button>
                     </form>
+                    <div id="confirmation-message" style="display: none; color: green; margin-top: 10px;">
+                        Vielen Dank für Ihre Anfrage. Wir bestätigen die Reservierung in Kürze per E-Mail.
+                    </div>
                 </div>
             </section>
         </div>
@@ -90,5 +97,6 @@
         </div>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/reservations.js"></script>
 </body>
 </html>
