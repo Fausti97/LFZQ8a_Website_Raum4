@@ -82,9 +82,8 @@ nav ul li a:hover, nav ul li a.current {
     flex-direction: column;
     justify-content: space-around;
     width: 30px;
-    height: 25px;
+    height: 27px;
     cursor: pointer;
-    padding: 5px;
 }
 
 .menu-toggle .bar {
@@ -109,6 +108,7 @@ nav ul li a:hover, nav ul li a.current {
         display: none; /* Hide navigation links by default on mobile */
         flex-direction: column;
         width: 100%;
+        margin-top: 45px;
         text-align: center;
         background: var(--white); /* Ensure background for dropdown */
         position: absolute; /* Position dropdown below header */
@@ -137,7 +137,7 @@ nav ul li a:hover, nav ul li a.current {
 
     /* Hamburger animation */
     .menu-toggle.active .bar:nth-child(1) {
-        transform: translateY(11px) rotate(45deg);
+        transform: translateY(9px) rotate(45deg);
     }
 
     .menu-toggle.active .bar:nth-child(2) {
@@ -145,7 +145,7 @@ nav ul li a:hover, nav ul li a.current {
     }
 
     .menu-toggle.active .bar:nth-child(3) {
-        transform: translateY(-11px) rotate(-45deg);
+        transform: translateY(-9px) rotate(-45deg);
     }
 
     /* Existing responsive styles */
@@ -350,12 +350,20 @@ nav ul li a:hover, nav ul li a.current {
     color: var(--secondary-color);
 }
 
-.form-group input {
+.form-group input, .form-group textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 40px;
 }
 
 #reservation-form .cta-button {
