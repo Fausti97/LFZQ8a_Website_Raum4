@@ -364,6 +364,10 @@ nav ul li a:hover, nav ul li a.current {
     font-size: 1.2rem;
 }
 
+.main-content {
+    padding-bottom: 80px;
+}
+
 /* Blog Page */
 #blog {
     display: grid;
