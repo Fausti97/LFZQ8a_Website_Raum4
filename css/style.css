@@ -369,6 +369,7 @@ nav ul li a:hover, nav ul li a.current {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
+    margin-bottom: 80px;
 }
 
 .recipe-post {
@@ -641,3 +642,4 @@ nav ul li a:hover, nav ul li a.current {
     transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
 }
+
