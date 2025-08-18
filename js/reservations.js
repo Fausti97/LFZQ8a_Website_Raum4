@@ -15,8 +15,6 @@ document.addEventListener('DOMContentLoaded', function() {
             setTimeout(() => {
                 contactForm.reset();
                 if (confirmationMessage) {
-                    // Optionally hide the message again after some time
-                    // confirmationMessage.style.display = 'none';
                 }
             }, 200); // 200ms delay to allow users to see the filled form before it resets
         });
